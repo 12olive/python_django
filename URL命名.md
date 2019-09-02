@@ -33,12 +33,12 @@ DTL模板是一种带有特殊语法的html文件,这个html文件可以被Djang
 `Render_to_string`:找到模板,然后将模板编译后渲染成python的 字符串格式.最后再通过HttpResponse类包装成一个HTTPResponse在template文件夹下新建一个html.对象返回回去.示例代码如下:
 
 ```py
-frome django .template,loder import render_to_string
-From django.http import HTTPResponse:
+from django .template,loder import render_to_string
+from django.http import HTTPResponse:
 
 def book_detail(request, book_id):
-http = render_to_string(‘detail.html)
-Return HttpResponse(html)
+    http = render_to_string(‘detail.html)
+    return HttpResponse(html)
 ```
 
 第二种  
@@ -49,7 +49,7 @@ Return HttpResponse(html)
 from django.shortcuts import render
 
 def book_list(request):
-return render(request, “list.html”)
+    return render(request, “list.html”)
 ```
 
 
