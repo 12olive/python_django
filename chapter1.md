@@ -1,6 +1,4 @@
-\# 第一个项目
-
-
+# \# 第一个项目
 
 \#\#1-1 命令行创建项目
 
@@ -12,11 +10,7 @@ djiango-admin startproject 【项目名】
 
 \`\`\`
 
-
-
 这样就可以在当前目录创建一个项目了
-
-
 
 \#\#2-1 命令行运行项目：
 
@@ -40,17 +34,13 @@ Python manage.py runsever
 
 host使用0.0.0.0。python manage.py runsever【ip】：【端口号】，同时需要更改settings文件中的：ALLOWED\_HOSTS = \[\]，填写本机ip。注意使用的是字符，需要使用‘ip名’。同时关闭本机防火墙。
 
-访问时：http://目标电脑ip：【端口号】，
-
-
+访问时：[http://目标电脑ip：【端口号】，](http://目标电脑ip：【端口号】，)
 
 \#\#1-2 pycharm创建项目
 
 通过pycharm的方式：文件-&gt;新建项目-&gt;选择Django。然后制定项目所在的路径，以及Python解释器，再点击create就可以创建项目了
 
 在pycharm的项目下,运行terminal,输入pyhton manage.py startapp \[appname\]
-
-
 
 \#\#2-2 pycharm运行项目
 
