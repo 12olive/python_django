@@ -1,4 +1,60 @@
-# First Chapter
+\# 第一个项目
 
 
+
+\#\#1-1 命令行创建项目
+
+通过命令行的方式：首先进入到安装了Django的虚拟环境中。执行命令：
+
+\`\`\`
+
+djiango-admin startproject 【项目名】
+
+\`\`\`
+
+
+
+这样就可以在当前目录创建一个项目了
+
+
+
+\#\#2-1 命令行运行项目：
+
+在终端，进入项目文件夹中，然后执行以下命令即可运行
+
+\`\`\`
+
+Python manage.py runsever
+
+\`\`\`
+
+\#\#3 改变端口号
+
+命令行和pycharm基本相同
+
+在命令行后加端口号，可以直接更改端口号，注意runsever 后需要加空格。
+
+\#\#4 局域网中让其他电脑访问本机项目
+
+首先更改ip，更改ip方法基本于端口号方法相同 。
+
+host使用0.0.0.0。python manage.py runsever【ip】：【端口号】，同时需要更改settings文件中的：ALLOWED\_HOSTS = \[\]，填写本机ip。注意使用的是字符，需要使用‘ip名’。同时关闭本机防火墙。
+
+访问时：http://目标电脑ip：【端口号】，
+
+
+
+\#\#1-2 pycharm创建项目
+
+通过pycharm的方式：文件-&gt;新建项目-&gt;选择Django。然后制定项目所在的路径，以及Python解释器，再点击create就可以创建项目了
+
+在pycharm的项目下,运行terminal,输入pyhton manage.py startapp \[appname\]
+
+
+
+\#\#2-2 pycharm运行项目
+
+直接点击右上角绿色三角按钮。只能点击一次，多次点击则会产生多次项目！
+
+点击项目，edit configuration，选择Allow parallen run，代表只运行单一实例。？？？不能生效，不知为何
 
