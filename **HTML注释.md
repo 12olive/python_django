@@ -1,8 +1,5 @@
-\# url
+url
 
-
-
-\`\`\`
 
 Django模板template\(html\)中如何使用注释comment
 
