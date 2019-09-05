@@ -11,5 +11,21 @@ def index(request):
     return render(request, 'index.html', context=text)
 ```
 
+`index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>templates_filter_demo</title>
+</head>
+<body>
+    {{ greet }}
+    {# greet 为context中的key,调用其value,即 gre函数 #}
+</body>
+</html>
+```
+
 
 
