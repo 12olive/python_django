@@ -1,14 +1,28 @@
+为什么需要过滤器
+
+因为在DTL中,不支持函数的调用形式`()`,因此不能给函数传递参数,而过滤器其实就是一个函数,可以对需要处理的参数进行处理,并且可以额外接收一个参数,即过滤器最多有两个参数\(`add`或`cut`,的`|`两边各为一个参数,如`{{add1|add:add2}}`\)
+
 `views.py`
 
 ```py
 from django.shortcuts import render
 
 def gre():
-    return 'hello world!'
+    return 'hello word!'
 
 def index(request):
     text = {'greet': gre} #后面的`gre`为字典中的`value`,实际为一个`gre`函数
     return render(request, 'index.html', context=text)
+
+def add_view(request):
+    context={
+        'key1': [1,2,3,4],
+        'key2': [5,6,7,8]
+    }
+    return render(request, 'add.html', context=context)
+
+def cut_views(request):
+    return render(request,'cut.html')
 ```
 
 `index.html`
@@ -21,10 +35,61 @@ def index(request):
     <title>templates_filter_demo</title>
 </head>
 <body>
-    {{ greet }}
+    {{ greet|add:'olive' }}
     {# greet 为context中的key,调用其value,即 gre函数 #}
+    <li><a href="{% url 'add' %}">add过滤器</a></li>
+    <li><a href="cut/">cut过滤器</a></li>
 </body>
 </html>
+```
+
+`cut.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cut过滤器</title>
+</head>
+<body>
+    {{ 'hello world'|cut:'o'}}
+    {# cut就跟replace作用基本一样,即去掉 cut 后的字符串 #}
+</body>
+</html>
+```
+
+`add.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add过滤器</title>
+</head>
+<body>
+    <p>{{ '1'|add:'2' }}</p>
+    {{ '1'|add:'122sss' }}
+    <p>{{ key1|add:key2 }}</p>
+</body>
+</html>
+```
+
+## `add`过滤器语法
+
+```py
+def add(value, arg):
+    """Add the arg to the value."""
+    #如果是两个是数值则直接相加
+    try:
+        return int(value) + int(arg)
+    except (ValueError, TypeError):
+    #如果是一个数值一个字符串则拼接,list也是拼接
+        try:
+            return value + arg
+        except Exception:
+            return ''
 ```
 
 
