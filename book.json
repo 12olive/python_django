@@ -1,4 +1,3 @@
-{"plugins": [
-    "highlight"
-]
+{
+"plugins": ["chapter-fold"]
 }
