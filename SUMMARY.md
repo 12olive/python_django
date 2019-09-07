@@ -9,4 +9,5 @@
 * [5 html中的超链接](templates_url_demo.md)
 * [6 html中使用if语句](htmlzhong-shi-yong-if-yu-ju.md)
 * [7 html中过滤器](templates_filter_demo.md)
+* [8 模板结构优化](8-mo-ban-jie-gou-you-hua.md)
 

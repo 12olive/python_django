@@ -6,6 +6,7 @@
 
 ```py
 from django.shortcuts import render
+from datetime import datetime
 
 def gre():
     return 'hello word!'
@@ -23,6 +24,44 @@ def add_view(request):
 
 def cut_views(request):
     return render(request,'cut.html')
+
+def date_views(request):
+    date={
+        'date_now': datetime.now()
+        #此时跟本机时间慢8h,因为跟时区的默认设置有关
+    }
+    return render(request,'date.html',context=date)
+```
+
+`url.py`
+
+```py
+"""templates_filter_demo URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/2.2/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.contrib import admin
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.index),
+    path('add/', views.add_view, name='add'),
+    path('cut/', views.cut_views, name='cut'),
+    path('date/', views.date_views, name='date'),
+]
+
 ```
 
 `index.html`
