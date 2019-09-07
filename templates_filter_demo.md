@@ -61,7 +61,6 @@ urlpatterns = [
     path('cut/', views.cut_views, name='cut'),
     path('date/', views.date_views, name='date'),
 ]
-
 ```
 
 `index.html`
@@ -78,8 +77,12 @@ urlpatterns = [
     {# greet 为context中的key,调用其value,即 gre函数 #}
     <li><a href="{% url 'add' %}">add过滤器</a></li>
     <li><a href="cut/">cut过滤器</a></li>
+    <li><a href="{% url 'date' %}">date过滤器</a></li>
 </body>
 </html>
+
+
+
 ```
 
 `cut.html`
@@ -111,6 +114,22 @@ urlpatterns = [
     <p>{{ '1'|add:'2' }}</p>
     {{ '1'|add:'122sss' }}
     <p>{{ key1|add:key2 }}</p>
+</body>
+</html>
+```
+
+`date.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>date_views</title>
+</head>
+<body>
+    {{ date_now|date:'Y.m.d G:i:s' }}
+    {# 以上的`|date:`实际上就是对date_now对应的函数获取的时间的格式化 #}
 </body>
 </html>
 ```
