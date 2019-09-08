@@ -80,9 +80,6 @@ urlpatterns = [
     <li><a href="{% url 'date' %}">date过滤器</a></li>
 </body>
 </html>
-
-
-
 ```
 
 `cut.html`

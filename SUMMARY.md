@@ -9,8 +9,7 @@
 * [4 HTML注释.md](/4 HTML注释.md)
 * [5 HTML超链接.md](/5 templates_url_demo.md)
 * [6 html中使用if语句](6 html中使用if语句.md)
-* [7 templates\_filter\_demo.md](/7 templates_filter_demo.md)
+* [7 过滤器](/7 templates_filter_demo.md)
 * [8模板结构优化.md](/8模板结构优化.md)
-
-
+* [9 静态文件](9-jing-tai-wen-jian.md)
 
