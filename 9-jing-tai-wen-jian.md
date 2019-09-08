@@ -21,5 +21,13 @@ INSTALLED_APPS = [
 STATIC_URL = '/static/'
 ```
 
-注意app的目录下必须新建一个`static`文件夹,且名称不能更改
+```html
+<body>
+    <img src="/static/logo.jpg">
+</body>
+```
+
+注意:`settings.py`中的STATIC\_URL = '/static/' 中的变量是可以变的,只要与html中的&lt;img&gt;中的路径相同即可,但注意app的目录下必须新建一个`static`文件夹,且名称不能更改
+
+
 
