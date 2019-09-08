@@ -9,5 +9,4 @@
 * [4 HTML注释.md](/4 HTML注释.md)
 * [5 HTML超链接.md](/5 templates_url_demo.md)
 * [6 html中使用if语句](6 html中使用if语句.md)
-* [0.2 pycharm技巧](02-pycharmji-qiao.md)
 
