@@ -4,7 +4,7 @@ Django模板template\(html\)中如何使用注释comment
 
 单行注释:
 
-使用 {\#  \#} 单行注释，例如:
+使用 {\#  \#} 单行注释，例如:
 
 ```py
 {# Everything you see here is a comment. It won't show up in the HTML output. #}
@@ -16,7 +16,5 @@ Django模板template\(html\)中如何使用注释comment
 {% comment %} this is a comment {% endcomment %}
 ```
 
-
-
-
+在Django中`{ % 函数或语句 % }`而`{{ 变量 }}`
 

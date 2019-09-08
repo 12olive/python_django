@@ -24,7 +24,7 @@
 
 ## DTL与普通HTML文件的区别
 
-DTL模板是一种带有特殊语法的html文件,这个html文件可以被Django变异,可以传递参数进去,实现数据动态化.在变异完成后,生成一个普通的HTML文件,然后发送给客户端,
+DTL模板是一种带有特殊语法的html文件,这个html文件可以被Django编译,可以传递参数进去,实现数据动态化.在变异完成后,生成一个普通的HTML文件,然后发送给客户端,
 
 ## 渲染模板:
 
@@ -37,7 +37,7 @@ from django .template,loder import render_to_string
 from django.http import HTTPResponse:
 
 def book_detail(request, book_id):
-    http = render_to_string(‘detail.html)
+    html = render_to_string(‘detail.html')
     return HttpResponse(html)
 ```
 

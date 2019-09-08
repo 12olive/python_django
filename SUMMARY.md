@@ -9,5 +9,5 @@
 * [5 HTML超链接.md](/5 templates_url_demo.md)
 * [6 html中使用if语句](6 html中使用if语句.md)
 * [7 html中过滤器](7 templates_filter_demo.md)
-* [8 模板结构优化](8-mo-ban-jie-gou-you-hua.md)
+* [8 模板结构优化](8模板结构优化.md)
 
