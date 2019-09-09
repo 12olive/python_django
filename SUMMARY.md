@@ -6,7 +6,7 @@
 * [1 第一个项目](1 第一个项目.md)
 * [2 URL命名.md](2 url 命名.md)
 * [3 变量.md](/3 变量.md)
-* [4 HTML注释.md](/4 HTML注释.md)
+* [4 HTML基本知识.md](/4 HTML注释.md)
 * [5 HTML超链接.md](/5 templates_url_demo.md)
 * [6 html中使用if语句](6 html中使用if语句.md)
 * [7 过滤器](/7 templates_filter_demo.md)

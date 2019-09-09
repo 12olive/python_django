@@ -18,3 +18,9 @@ Django模板template\(html\)中如何使用注释comment
 
 在Django中`{ % 函数或语句 % }`而`{{ 变量 }}`
 
+# 不是用缓存去加载一个页面
+
+使用ctr+shift+r
+
+
+

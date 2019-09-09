@@ -29,5 +29,32 @@ STATIC_URL = '/static/'
 
 注意:`settings.py`中的STATIC\_URL = '/static/' 中的变量是可以变的,只要与html中的&lt;img&gt;中的路径相同即可,但注意app的目录下必须新建一个`static`文件夹,且名称不能更改
 
+使用`load`可不再必须与settings里的`STATIC_URL`保持一致
+
+示例如下
+
+```html
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img src="{% static 'logo.jpg' %}">
+
+</body>
+</html>
+```
+
+如果有多个app则可以在各自的app目录下的static文件夹下新建与app名相同的文件夹,而使用`<img src="{% static 'front/logo.jpg' %}">`而实现对特定位置但同名的图片的调用.
+
+如果有特殊的,与各个app均不太相关的可以在根目录\(与templates文件夹同级目录\)下新建static文件夹,并手动加入路径.\(settings.py中增加STATICFILES_DIR = \[os.path.join\(BASE\_DIR, 'static'_\)\]
+
+
+
+
+
 
 
