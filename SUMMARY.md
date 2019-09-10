@@ -12,4 +12,5 @@
 * [7 过滤器](/7 templates_filter_demo.md)
 * [8模板结构优化.md](/8模板结构优化.md)
 * [9 静态文件](9-jing-tai-wen-jian.md)
+* [4.1 MySQL相关软件](41-mysqlxiang-guan-ruan-jian.md)
 
