@@ -50,11 +50,8 @@ brew --version
 
 ```
 git -C "$(brew --repo)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
-
 git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
-
 git -C "$(brew --repo homebrew/cask)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git
-
 brew update
 ```
 
@@ -72,13 +69,7 @@ source ~/.bash_profile
 Homebrew在安装应用时, 默认情况下会自动更新所有应用, 需要等待很长时间的更新操作, 可以选择屏蔽自动更新:
 
 ```
-echo
-'export HOMEBREW_NO_AUTO_UPDATE=true'
->
->
- ~/.bash_profile
-
-
+echo'export HOMEBREW_NO_AUTO_UPDATE=true'>> ~/.bash_profile
 source
  ~/.bash_profile
 ```
