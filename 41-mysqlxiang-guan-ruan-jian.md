@@ -9,7 +9,6 @@
 ### 4在django文件的settings文件更改引擎设置
 
 ```py
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -24,7 +23,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         #更改数据库引擎,也可以用其他的如:sqlite3/mysql/orcle等
-        'NAME': 'django_db1',
+        'NAME': 'mydjango_db1',
         #数据库的名字:django_db1
         'USER': 'ROOT',
         #数据库用户名
