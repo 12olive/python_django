@@ -10,10 +10,6 @@
 
 查找  find/ -name \[文件名\]
 
-
-
-
-
 # [Homebrew](https://brew.sh/)包管理器 {#h1_1}
 
 ## 一、简介 {#h2_2}
@@ -52,19 +48,22 @@ brew --version
 
 这里替换为清华大学开源软件镜像站的安装源, 直接在终端执行如如下命令即可:
 
-> git -C "$\(brew --repo\)" remote set-url origin[https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git](https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git)
->
-> git -C "$\(brew --repo homebrew/core\)" remote set-url origin[https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git](https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git)
->
-> git -C "$\(brew --repo homebrew/cask\)" remote set-url origin[https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git](https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git)
->
-> brew update
+```
+git -C "$(brew --repo)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+
+git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
+
+git -C "$(brew --repo homebrew/cask)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git
+
+brew update
+```
 
 如果需要替换二进制预编译包源的话, 可以执行如下命令:
 
-> echo 'export HOMEBREW\_BOTTLE\_DOMAIN=[https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles](https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles)' &gt;&gt; ~/.bash\_profile
->
-> source ~/.bash\_profile
+```
+echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles' >> ~/.bash_profile
+source ~/.bash_profile
+```
 
 复原操作可以参考[https://mirrors.tuna.tsinghua.edu.cn/help/homebrew](https://mirrors.tuna.tsinghua.edu.cn/help/homebrew)
 
@@ -82,7 +81,6 @@ echo
 
 source
  ~/.bash_profile
-
 ```
 
 ## 五、安装brew-cask {#h2_8}
@@ -95,7 +93,6 @@ brew-cask可以采用如下命令安装:
 
 ```
 brew install homebrew/completions/brew-cask-completion
-
 ```
 
 或者
@@ -103,7 +100,6 @@ brew install homebrew/completions/brew-cask-completion
 ```
 brew tap homebrew/completions
 brew install brew-cask-completion
-
 ```
 
 ## 六、常用命令 {#h2_9}
