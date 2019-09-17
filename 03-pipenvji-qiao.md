@@ -1,7 +1,15 @@
 **安装Pipenv：**
 
+pipenv 的安装和普通的第三方库没什么区别，可以直接使用 pip 命令安装。
+
 ```
 pip install pipenv
+```
+
+在 Mac 上可以使用 brew 命令来安装
+
+```
+brew install pipenv
 ```
 
 **创建虚拟环境**
