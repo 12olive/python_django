@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [0.1 mac bash基本命令](/0 mac-bash基本命令.md)
 * [0.2 pycharm技巧](02-pycharmji-qiao.md)
+* [0.3 pipenv技巧](03-pipenvji-qiao.md)
 * [1 第一个项目](1 第一个项目.md)
 * [2 URL命名.md](2 url 命名.md)
 * [3 变量.md](/3 变量.md)
@@ -12,5 +13,5 @@
 * [7 过滤器](/7 templates_filter_demo.md)
 * [8模板结构优化.md](/8模板结构优化.md)
 * [9 静态文件](9-jing-tai-wen-jian.md)
-* [4.1 MySQL相关软件](41-mysqlxiang-guan-ruan-jian.md)
+* [0.3 pipenv技巧](03-pipenvji-qiao.md)
 
