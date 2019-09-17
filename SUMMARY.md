@@ -13,5 +13,4 @@
 * [7 过滤器](/7 templates_filter_demo.md)
 * [8模板结构优化.md](/8模板结构优化.md)
 * [9 静态文件](9-jing-tai-wen-jian.md)
-* [0.3 pipenv技巧](03-pipenvji-qiao.md)
 
