@@ -5,7 +5,7 @@
 * [0.2 pycharm技巧](02-pycharmji-qiao.md)
 * [0.3 pipenv技巧](03-pipenvji-qiao.md)
 * [0.4homebrew技巧](04homebrewji-qiao.md)
-* Python基础知识
+* [Python基础知识](pythonji-chu-zhi-shi.md)
   * [实例化对象](shi-li-hua-dui-xiang.md)
 * Python语句
 * Django
@@ -20,4 +20,6 @@
   * [9静态文件](9jing-tai-wen-jian.md)
     * [9-jing-tai-wen-jian.md](9-jing-tai-wen-jian.md)
     * [91-mysql相关文件.md](91-mysql相关文件.md)
+
+
 
