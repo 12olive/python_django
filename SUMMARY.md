@@ -7,8 +7,9 @@
 * [0.4homebrew技巧](04homebrewji-qiao.md)
 * [Python基础知识](pythonji-chu-zhi-shi.md)
   * [实例化对象](shi-li-hua-dui-xiang.md)
+  * [构造函数](gou-zao-han-shu.md)
 * Python语句
-* Django
+* [Django](django.md)
   * [1 第一个项目](1 第一个项目.md)
   * [2 URL命名.md](2 url 命名.md)
   * [3 变量.md](/3 变量.md)
