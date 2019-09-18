@@ -6,6 +6,7 @@
 * [0.3 pipenv技巧](03-pipenvji-qiao.md)
 * [0.4homebrew技巧](04homebrewji-qiao.md)
 * Python基础知识
+  * 实例化对象
 * Python语句
 * Django
   * [1 第一个项目](1 第一个项目.md)
