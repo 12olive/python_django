@@ -50,5 +50,7 @@ print(eat2.name, eat2.age)
 Mike 20
 ```
 
+self代表类的实例,而非类
 
+哪个对象调用方法,那么该方法中的self就代表那个对象
 
