@@ -5,7 +5,7 @@
 * [0.2 pycharm技巧](02-pycharmji-qiao.md)
 * [0.3 pipenv技巧](03-pipenvji-qiao.md)
 * [0.4homebrew技巧](04homebrewji-qiao.md)
-* [Python基础语句](pythonji-chu-yu-ju.md)
+* [python基础语句.md](python基础语句.md)
 * [Python基础知识](pythonji-chu-zhi-shi.md)
   * [实例化对象](shi-li-hua-dui-xiang.md)
   * [构造函数](gou-zao-han-shu.md)
