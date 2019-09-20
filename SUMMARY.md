@@ -20,7 +20,7 @@
   * [6 html中使用if语句](6 html中使用if语句.md)
   * [7 过滤器](/7 templates_filter_demo.md)
   * [8模板结构优化.md](/8模板结构优化.md)
-  * [9静态文件](9jing-tai-wen-jian.md)
+  * [9静态文件.md](/9静态文件.md)
     * [9.1静态文件.md](9-静态文件.md)
     * [9.2mysql相关文件.md](91-mysql相关文件.md)
 
