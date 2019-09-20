@@ -5,13 +5,12 @@
 * [0.2 pycharm技巧](02-pycharmji-qiao.md)
 * [0.3 pipenv技巧](03-pipenvji-qiao.md)
 * [0.4homebrew技巧](04homebrewji-qiao.md)
-* Python基础语句
+* [Python基础语句](pythonji-chu-yu-ju.md)
 * [Python基础知识](pythonji-chu-zhi-shi.md)
   * [实例化对象](shi-li-hua-dui-xiang.md)
   * [构造函数](gou-zao-han-shu.md)
   * [析构函数](xi-gou-han-shu.md)
   * [访问限制](fang-wen-xian-zhi.md)
-
 * [Django](django.md)
   * [1 第一个项目](1 第一个项目.md)
   * [2 URL命名.md](2 url 命名.md)
@@ -24,6 +23,4 @@
   * [9静态文件](9jing-tai-wen-jian.md)
     * [9-jing-tai-wen-jian.md](9-jing-tai-wen-jian.md)
     * [91-mysql相关文件.md](91-mysql相关文件.md)
-
-
 
