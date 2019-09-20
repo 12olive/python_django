@@ -6,8 +6,8 @@
 * [0.3 pipenv技巧](03-pipenvji-qiao.md)
 * [0.4homebrew技巧](04homebrewji-qiao.md)
 * [Python基础知识](pythonji-chu-zhi-shi.md)
-* [实例化对象](shi-li-hua-dui-xiang.md)
-  [构造函数](gou-zao-han-shu.md)
+  * [实例化对象](shi-li-hua-dui-xiang.md)
+  * [构造函数](gou-zao-han-shu.md)
   * [析构函数](xi-gou-han-shu.md)
   * [访问限制](fang-wen-xian-zhi.md)
 * Python语句
