@@ -9,6 +9,7 @@
   * [实例化对象](shi-li-hua-dui-xiang.md)
   * [构造函数](gou-zao-han-shu.md)
   * [析构函数](xi-gou-han-shu.md)
+  * 访问限制
 * Python语句
 * [Django](django.md)
   * [1 第一个项目](1 第一个项目.md)
