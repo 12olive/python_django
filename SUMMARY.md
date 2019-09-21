@@ -7,7 +7,7 @@
 * [0.4homebrew技巧](04homebrewji-qiao.md)
 * [python基础语句.md](python基础语句.md)
 * [Python基础知识](pythonji-chu-zhi-shi.md)
-  * [实例化对象](shi-li-hua-dui-xiang.md)
+  * [实例化对象](/实例化对象.md)
   * [构造函数](gou-zao-han-shu.md)
   * [析构函数](xi-gou-han-shu.md)
   * [访问限制](/访问限制.md)
