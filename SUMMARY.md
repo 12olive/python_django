@@ -11,6 +11,7 @@
   * [构造函数](gou-zao-han-shu.md)
   * [析构函数](xi-gou-han-shu.md)
   * [访问限制](/访问限制.md)
+  * [继承](继承.md)
 * [Django](django.md)
   * [1 第一个项目](1 第一个项目.md)
   * [2 URL命名.md](2 url 命名.md)
@@ -21,8 +22,9 @@
   * [7 过滤器](/7 templates_filter_demo.md)
   * [8模板结构优化.md](/8模板结构优化.md)
   * [9静态文件.md](/9静态文件.md)
-    * [[9.1静态文件.md](9-静态文件.md)](9.1静态文件.md)
+    * [9.1静态文件.md](9.1静态文件.md)
     * [9.2mysql相关文件.md](91-mysql相关文件.md)
+* [继承](ji-cheng.md)
 
 
 
