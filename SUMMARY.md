@@ -12,6 +12,7 @@
   * [析构函数](xi-gou-han-shu.md)
   * [访问限制](/访问限制.md)
   * [继承](继承.md)
+  * [动态给实例添加属性和方法并 使用](dong-tai-gei-shi-li-tian-jia-shu-xing-he-fang-fa-bing-shi-yong.md)
 * [Django](django.md)
   * [1 第一个项目](1 第一个项目.md)
   * [2 URL命名.md](2 url 命名.md)
