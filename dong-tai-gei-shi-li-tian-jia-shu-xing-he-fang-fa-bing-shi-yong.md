@@ -36,7 +36,7 @@ class Person(object):
     def __init__(self, age):
     #self.age = age  书序属性直接对外暴露,可以使用如下方法进行限制访问
     self.__age = age
-    
+
     '''
     #使用私有变量,可以使用方法来提取对象和改变变量
     def getAge(self):
@@ -58,7 +58,7 @@ class Person(object):
             age = 0
         self.__age = age
     #setAge
-    
+
 per.age = 100 #相当于调用setAge
 print(per.age) #相当于调用getAge
 
@@ -82,7 +82,7 @@ per1 = Person(1)
 per2 = Person(2)
 print(per1 + per2)
 #相当于print(per1.__add__(per2)
-print(per1)    
+print(per1)
 ```
 
 发邮件
@@ -92,10 +92,10 @@ print(per1)
 import smtplib
 
 #邮件文本
-from email.mime.text import  MIMEText
+from email.mime.text import MIMEText
 
-#STMP服务器
-STMPsever = 'stmp.163.com'
+#SMTP服务器
+SMTPServer = 'smtp.163.com'
 
 #发邮件的地址
 sender = '12olive@163.com'
@@ -113,8 +113,17 @@ msg['Subject'] = 'your friend'
 #发送者
 msg['From'] = sender
 
+#创建SMTP服务器
+mailServer = smtplib.SMTP(SMTPServer, 25)
 
+#登录邮箱
+mailServer.login(sender, password)
 
+#发送邮件
+mailServer.semdmail(sender, ['abc@163.com', 'dcdf@163.com'], msg.as_string())
+
+#退出邮箱
+mailServer.quit()
 ```
 
 
